@@ -1,6 +1,6 @@
 ---
-title: Tailwind CSS Progress - Material Tailwind
-description: Customise your web projects with our easy-to-use Progress component for Tailwind CSS using Material Design guidelines.
+title: Tailwind CSS Progress Bar - Material Tailwind
+description: Use our progress bar component examples styled with Tailwind CSS to show a user how far along he is in a process.
 navigation:
   [
     "progress-bar",
@@ -11,20 +11,28 @@ navigation:
     "progress-bar-sizes-label",
     "progress-bar-label-outside",
     "progress-bar-custom-styles",
-    
+    "best-practices",
   ]
 github: progress-bar
 prev: popover
 next: radio-button
 ---
 
-# Tailwind CSS Progress
+# Tailwind CSS Progress Bar
 
-Our Tailwind CSS progress component can be used to show a user how far along he is in a process. The progress can be determinate or indeterminate. Use the Progress Bar to show an ongoing process that takes a noticeable time to finish.
+Our Tailwind CSS progress bar component can be used to show a user how far along he is in a process. The progress can be determinate or indeterminate. 
+
+Use the Progress Bar to show an ongoing process that takes a noticeable time to finish. It helps users estimate how much time an operation might take or simply reassuring them that the system is actively working on something.
 
 Below we are presenting our examples of progress components that you can use in your Tailwind CSS project. They come in different styles so you can adapt them easily to your needs.
 
 <br />
+
+## Progress Bar Examples:
+
+## Default Progress Bar
+
+Use this minimalistic progress bar example as a starting point in your project. It comes with rounded edges and a dark color (bg-gray-900).
 
 <CodePreview
   id="progress-bar"
@@ -42,7 +50,7 @@ Below we are presenting our examples of progress components that you can use in 
 
 ## Progress Bar Variants
 
-Below there are 2 different variants of a progress that you can use simple and gradient.
+Below you can see how to implement 2 different variants of progress bars: simple and gradient. The second progress bar uses a subtle gradient effect from dark gray to slightly lighter gray. This gradient adds visual interest and depth to the progress bar, distinguishing it from the solid fill of the first bar.
 
 <CodePreview
   id="progress-bar-variants"
@@ -66,7 +74,7 @@ Below there are 2 different variants of a progress that you can use simple and g
 
 ## Progress Bar Sizes
 
-The Progress component comes with 3 different sizes that you can change it.
+Check out this component example to see how you can implement your progress bar on 3 different sizes.
 
 <CodePreview
   id="progress-bar-sizes"
@@ -100,6 +108,10 @@ The Progress component comes with 3 different sizes that you can change it.
 ---
 
 ## Progress Bar Colors
+
+The filled portions of the progress bars utilize different Tailwind CSS color classes (<Code>bg-blue-500</Code>, <Code>bg-red-500</Code>, <Code>bg-green-500</Code>, <Code>bg-amber-500</Code>, <Code>bg-teal-500</Code>, <Code>bg-indigo-500</Code>, <Code>bg-purple-500</Code>, <Code>bg-pink-500</Code>), covering a wide spectrum of colors from blue and green to amber, teal, indigo, purple, and pink. 
+
+This variety allows for easy differentiation between multiple progress bars, making the set versatile for representing different types of data or tasks.
 
 <CodePreview
   id="progress-bar-colors"
@@ -165,6 +177,8 @@ The Progress component comes with 3 different sizes that you can change it.
 
 ## Progress Bar with Label
 
+This example presents a single progress bar with text within the filled portion of the bar, directly communicating the progress status to the user.
+
 <CodePreview
   id="progress-bar-with-label"
   link="progress-bar#progress-bar-with-label"
@@ -184,6 +198,8 @@ The Progress component comes with 3 different sizes that you can change it.
 
 
 ## Progress Bar Sizes Label
+
+Check out this example to see how you can implement progress bars with text within the filled portion on different sizes.
 
 <CodePreview
   id="progress-bar-sizes-label"
@@ -223,7 +239,7 @@ The Progress component comes with 3 different sizes that you can change it.
 
 ## Progress Bar Label Outside
 
-Use the example below to add the label outside the progress bar.
+Use the example below to add the label outside the progress bar. This style makes the text clear, readable, and aesthetically consistent with the progress bar's design.
 
 <CodePreview
   id="progress-bar-label-outside"
@@ -258,7 +274,7 @@ Use the example below to add the label outside the progress bar.
 
 ## Progress Bar Custom Styles
 
-Use the example below to customize the progress bar.
+Use the example below to customize your progress bar.
 
 <CodePreview
   id="progress-bar-custom-styles"
@@ -274,3 +290,11 @@ Use the example below to customize the progress bar.
 </CodePreview>
 
 ---
+
+<span id="best-practices"></span>
+## Progress Bar Best Practices for Developers
+
+• Provide feedback when the process is complete (message, sound). <br />
+• Use progress bars only when necessary - not every loading or processing action requires a progress bar.<br />
+• Indeterminate progress bars should be used sparingly, only when the duration cannot be determined.<br />
+• Make sure the progress bar accurately reflects the current status of the process it represents.<br /> 

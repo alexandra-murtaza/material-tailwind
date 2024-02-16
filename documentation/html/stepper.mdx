@@ -9,6 +9,7 @@ navigation:
     "stepper-with-dots",
     "stepper-with-contents",
     "stepper-with-custom-styles",
+    "best-practices",
  ]
 github: stepper
 prev: spinner
@@ -19,8 +20,18 @@ next: switch
 
 Whether you're crafting a seamless user journey or simplifying complex forms, Material Tailwind's Stepper component comes in handy. It is designed to break down complex tasks or information into smaller, more manageable steps, making it easier for users to understand, navigate, and complete a series of actions.
 
+A stepper component usually consists of buttons or arrows that users can click to increase or decrease the value, along with a display area showing the current value. Depending on the design, it may also include additional features like minimum and maximum value constraints, step sizes, and visual feedback to indicate the selected value.
+
+Check out below our stepper examples styled with Tailwind CSS.
+
 
 <br />
+
+## Stepper Examples:
+
+## Simple Stepper with Numbers
+
+Use this versatile stepper component which includes a horizontal progress line, step circles, and navigation buttons.
 
 <CodePreview
   id="stepper"
@@ -65,6 +76,8 @@ Whether you're crafting a seamless user journey or simplifying complex forms, Ma
 ---
 
 ## Stepper With Icon
+
+In this example, each step circle includes an SVG icon, which adds a layer of visual guidance. 
 
 <CodePreview
   id="stepper-with-icon"
@@ -127,6 +140,8 @@ Whether you're crafting a seamless user journey or simplifying complex forms, Ma
 
 ## Stepper With Dots
 
+Indicate progress through a sequence of steps using our Tailwind CSS component. Each step circle is designed with simplicity in mind, utilizing only essential styling. 
+
 <CodePreview
   id="stepper-with-dots"
   link="stepper#stepper-with-dots"
@@ -169,6 +184,8 @@ Whether you're crafting a seamless user journey or simplifying complex forms, Ma
 
 
 ## Stepper With Contents
+
+Each step in the stepper includes an SVG icon, a descriptive section with a title,  and a short description. This addition provides users with more context about what each step involves, making the process more transparent and understandable.
 
 <CodePreview
   id="stepper-with-contents"
@@ -259,6 +276,8 @@ Whether you're crafting a seamless user journey or simplifying complex forms, Ma
 
 ## Stepper With Custom Styles
 
+Check out this example to see how you can add custom syles to your stepper component.
+
 <CodePreview
   id="stepper-with-custom-styles"
   link="stepper#stepper-with-custom-styles"
@@ -319,4 +338,11 @@ Whether you're crafting a seamless user journey or simplifying complex forms, Ma
 
 ---
 
+<span id="best-practices"></span>
+## Stepper Best Practices for Developers
+
+• Make sure each step in the stepper is clearly labeled and easy to understand. <br />
+• Only show information that is relevant to the current step to keep users focused and prevent information overload.<br />
+• Decide whether your process requires users to complete steps in a strict sequence (linear) or if they can navigate to any step at any time (non-linear).<br />
+• Provide clear visual cues to indicate the current step, completed steps, and steps that are yet to be done. <br />
 
